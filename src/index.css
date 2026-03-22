@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+  }
+
+  .input-base {
+    @apply block w-full rounded-xl border border-slate-300 px-3 py-2 text-sm text-slate-900 shadow-sm
+      focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-500 focus-visible:ring-offset-1;
+  }
+
+  .label-base {
+    @apply text-xs font-medium uppercase tracking-wide text-slate-500;
+  }
+
+  .section-title {
+    @apply text-sm font-semibold text-slate-900;
+  }
+}
